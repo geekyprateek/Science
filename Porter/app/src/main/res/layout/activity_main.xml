@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E3F2FD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/PorterDetail"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:text="PORTER COURIER DETAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_below="@+id/PorterDetail"
+        android:id="@+id/apiHit"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="ApiHit :Loading..."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:layout_below="@+id/PorterDetail"
+        android:text="Count :Loading..."
+        android:id="@+id/count"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_alignRight="@+id/apiHit"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#E3F2FD"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/count"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>
